@@ -15,7 +15,7 @@
     "url": "git+https://github.com/stellaround/code-quality-enhancer.git"
   },
   "author": "spectateur",
-  "license": "Apache",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/stellaround/code-quality-enhancer/issues"
   },
