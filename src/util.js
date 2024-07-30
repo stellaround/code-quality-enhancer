@@ -45,11 +45,6 @@ export const updatePackageVersions = async (packageNames, packageData) => {
   return sortObjectByKey(packageData.devDependencies);
 };
 
-// 将资源文件拷贝到目标目录
-export const copyResourceFiles = (source, target) => {
-  fs.copyFileSync(source, target);
-};
-
 // 获取所有安装的依赖包名
 export const getAllPackageNames = (packageData) => {
   const dependencies = Object.keys(packageData.dependencies || {});

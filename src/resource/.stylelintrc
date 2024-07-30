@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "stylelint-config-standard-vue",
+    "stylelint-config-clean-order"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+
+  "ignoreFiles": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.tsx",
+    "**/*.ts",
+    "**/*.json",
+    "**/*.md",
+    "**/*.svg",
+    "**/*.png",
+    "**/*.jpg",
+    "**/*.jpeg",
+    "**/*.gif",
+    "**/*.cjs",
+    "**/*.ico"
+  ]
+}
