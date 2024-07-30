@@ -10,7 +10,7 @@
 ## 快速开始
 
 ```sh
-npx code-quality-enhancer
+npx @stellaround/code-quality-enhancer
 ```
 
 ## License

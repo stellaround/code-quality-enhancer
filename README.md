@@ -9,7 +9,7 @@ The tool integrates ESLint, StyleLint, Lint-staged, Commitlint, and Husky to est
 ## Quick Start
 
 ```sh
-npx code-quality-enhancer
+npx @stellaround/code-quality-enhancer
 ```
 
 ## License
