@@ -1,7 +1,7 @@
 {
   "name": "@stellaround/code-quality-enhancer",
   "version": "1.0.0",
-  "description": "集成了ESLint、Prettier、StyleLint、Lint-staged、Commitlint、和Husky的代码质量工具，用于补全已有项目的代码质量控制。",
+  "description": "集成了ESLint、StyleLint、Lint-staged、Commitlint、和Husky的代码质量工具，用于为现有项目建立完整的代码质量控制。",
   "type": "module",
   "main": "src/index.js",
   "bin": {
