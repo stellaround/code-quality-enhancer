@@ -80,11 +80,24 @@ const main = async () => {
 
   try {
     await fse.copy(path.join(__dirname, "resource"), projectPath);
-    console.log("Files copied successfully!");
   } catch (err) {
     console.log(err);
     console.log(chalk.hex("#F56C6C")("拷贝配置文件失败 !"));
   }
+
+  //写入一些package.json需要更新的逻辑
+
+  packageData.scripts.prepare = "husky install";
+
+  // 确保 lint-staged 存在
+  if (!packageData["lint-staged"]) {
+    packageData["lint-staged"] = {};
+  }
+
+  packageData["lint-staged"]["*.{ts,tsx,json,md,vue,cjs,js}"] = [
+    "eslint --fix",
+  ];
+  packageData["lint-staged"]["*.{css,less,vue}"] = ["stylelint --fix"];
 
   try {
     fs.writeFileSync(
@@ -92,7 +105,11 @@ const main = async () => {
       JSON.stringify(packageData, null, 2),
       "utf8",
     );
-    console.log(chalk.hex("#55D187")("更新package.json成功，请安装依赖包"));
+    console.log(
+      chalk.hex("#55D187")(
+        "更新package.json成功，请使用npm i/pnpm i安装依赖包",
+      ),
+    );
   } catch (e) {
     console.log(e);
     console.log(chalk.hex("#F56C6C")("更新package.json失败 !"));
