@@ -1,6 +1,6 @@
 <div align="center">
   <img alt="auto-cli logo" width="120" height="120" src="./logo.png">
-  <h1>convert-vue-scoped</h1>
+  <h1>code-quality-enhancer</h1>
   <span>English | <a href="./README.zh-CN.md">中文</a></span>
 </div>
 
