@@ -1,6 +1,6 @@
 <div align="center">
   <img alt="convert-vue-scoped logo" width="120" height="120" src="./logo.png">
-  <h1>convert-vue-scoped</h1>
+  <h1>code-quality-enhancer</h1>
   <span><a href="./README.md">English</a> | 中文</span>
 </div>
 
